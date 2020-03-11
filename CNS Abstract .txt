@@ -1,0 +1,28 @@
+﻿There is a lot of work being done on spam filtering of emails. Big email corporations like Gmail and Outlook use these techniques for filtering emails into spam and not spam. Machine learning is being extensively used in this field.
+
+
+We first plan to review some of the currently implemented models for spam filtering. We will review the traditional techniques as well as various machine learning based techniques for it.
+
+
+After that we plan to use different language models like Term Frequency(TF), DocToVec, BERT and apply various machine learning techniques for classification as we found that these techniques have not been used a lot in this field. For this we have planned to use features like Language model, Spam Entropy[ ], subject, user address and attachment information. For this, we are planning to use the following datasets : Fraudulent email corpus, Email Spam dataset and Enron email dataset , all of which are available on Kaggle and have labels attached to them. We plan to classify the mails into different kind of spams like advertisements, spoofs, money scams, malware warnings etc.
+
+
+We are also planning to view the attachment and include it in the features to broaden the search. For this we plan to classify the attachment documents in a similar way as the email text.
+
+
+Some relevant research papers :
+1. A Survey and Evaluation of Supervised Machine Learning Techniques for Spam E-Mail Filtering 
+2. Machine Learning for E-mail Spam Filtering: Review, Techniques and Trends
+3. Security Evaluation of Pattern Classifiers under Attack
+4. Machine learning for email spam filtering: review, approaches and open research problems
+5. Content Based Spam Email Filtering
+6. Spam Filtering Email Classification (SFECM) using Gain and Graph Mining Algorithm
+7. MEADE: Towards a Malicious Email Attachment Detection Engine
+8. BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding
+
+
+Datasets :
+1. https://www.kaggle.com/rtatman/fraudulent-email-corpus?fbclid=IwAR1DWgqx5IVBU1nTAkVrdCF0U-jOuSFHKWRuDaiN3BZONrXExe7olvJPVpQ
+2. https://www.kaggle.com/venky73/spam-mails-dataset?fbclid=IwAR2Gx4Ho5HCHN6k-oJiE3ayTE02itzCThwDxkk3Y6L1rQLTRbNr68iQuRio
+3. https://www.kaggle.com/wcukierski/enron-email-dataset
+4. https://archive.ics.uci.edu/ml/datasets/spambase?fbclid=IwAR0Q7Nu1n13XWVjc1-QZTD-5mW893AH178QPejw1wqH0rwci-uFDRwjEzmE
