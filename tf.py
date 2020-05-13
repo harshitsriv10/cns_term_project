@@ -101,6 +101,9 @@ df_test.head()
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.linear_model import LogisticRegression
 from sklearn.svm import SVC
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.naive_bayes import GaussianNB
+from sklearn.neural_network import MLPClassifier
 from sklearn.metrics import accuracy_score
 
 rf = RandomForestClassifier(max_depth=10, random_state=0)
@@ -111,6 +114,15 @@ lr = LogisticRegression(random_state=0).fit(df,label_train)
 sv = SVC()
 sv.fit(df,label_train)
 
+dt = DecisionTreeClassifier()
+dt.fit(df,label_train)
+
+nb = GaussianNB()
+nb.fit(df,label_train)
+
+mlp = MLPClassifier(solver='lbfgs', alpha=1e-5,hidden_layer_sizes=(5, 5), random_state=1)
+mlp.fit(df,label_train)
+
 test_predict_rf = rf.predict(df_test)
 accuracy_score(test_predict_rf,label_test)
 
@@ -119,3 +131,12 @@ accuracy_score(test_predict_lr,label_test)
 
 test_predict_sv = sv.predict(df_test)
 accuracy_score(test_predict_sv,label_test)
+
+test_predict_dt = dt.predict(df_test)
+accuracy_score(test_predict_dt,label_test)
+
+test_predict_nb = nb.predict(df_test)
+accuracy_score(test_predict_nb,label_test)
+
+test_predict_mlp = mlp.predict(df_test)
+accuracy_score(test_predict_mlp,label_test)
